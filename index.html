@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Note-Taking App</h1>
+        <div class="input-section">
+            <textarea id="note-input" placeholder="Write your note here..."></textarea>
+            <button id="add-note-btn">Add Note</button>
+        </div>
+        <div class="filter-section">
+            <label for="status-filter">Filter by Status:</label>
+            <select id="status-filter">
+                <option value="all">All</option>
+                <option value="on-hold">On Hold</option>
+                <option value="in-process">In Process</option>
+                <option value="done">Done</option>
+            </select>
+        </div>
+        <ul id="notes-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
